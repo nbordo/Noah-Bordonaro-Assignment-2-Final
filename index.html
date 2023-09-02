@@ -1,0 +1,72 @@
+
+<head>
+    <title> icon template square </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    <style>
+        .row {
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+    .image-container {
+     display: table-cell ;
+     vertical-align: middle; 
+     padding: 10px;
+        }
+  </style>
+</head>
+
+<body style="background-color: orange;"
+ <div class="row">
+ <div class="image-container"><img id="wdrop" src="img/wdrop.png" height="200" width="200" /></div>
+ <div class="image-container"><img id="soundwave" src="img/soundwave.png" height="200" width="200"/></div>
+ <div class="image-container"><img id="doubledrop" src="img/doubledrop.png" height="200" width="200"/></div>
+  </div>
+
+ <div class="row">
+ <div class="image-container"><img id="lantern" src="img/lantern.png" height="200" width="200"/></div>
+ <div class="image-container"><img id="leaf" src="img/leaf.png" height="200" width="200"/></div>
+ <div class="image-container"><img id="candle" src="img/candle.png" height="200" width="200"/></div>
+  </div>
+
+<div class="row">
+<div class="image-container"><img id="teacup" src="img/teacup.png" height="200" width="200"/></div>
+<div class="image-container"><img id="moon" src="img/moon.png" height="200" width="200"/></div>
+<div class="image-container"><img id="tent" src="img/tent.png" height="200" width="200"/></div>
+</div>
+
+
+<script>
+var sound1 = new buzz.sound("sound/waterdrop.wav");
+var sound2 = new buzz.sound("sound/ambient.wav");
+var sound3 = new buzz.sound("sound/waterdunk.wav");
+var sound4 = new buzz.sound("sound/birthday.wav");
+var sound5 = new buzz.sound("sound/chime.wav");
+var sound6 = new buzz.sound("sound/wchime.wav");
+var sound7 = new buzz.sound("sound/pizzicato.wav");
+var sound8 = new buzz.sound("sound/pluck.wav");
+var sound9 = new buzz.sound("sound/fire.wav");
+
+window.onload = function() {
+document.getElementById("wdrop").addEventListener("click", function () {sound1.play();});
+document.getElementById("soundwave").addEventListener("click", function () {sound2.play();});
+document.getElementById("doubledrop").addEventListener("click", function () {sound3.play();});
+document.getElementById("lantern").addEventListener("click", function () {sound4.play();});
+document.getElementById("leaf").addEventListener("click", function () {sound5.play();});
+document.getElementById("candle").addEventListener("click", function () {sound6.play();});
+document.getElementById("teacup").addEventListener("click", function () {sound7.play();});
+document.getElementById("moon").addEventListener("click", function () {sound8.play();});
+document.getElementById("tent").addEventListener("click", function () {sound9.play();});
+
+
+}
+
+</script>
+
+
+
+
+</div>
+  
+</body>
+
+</html>
